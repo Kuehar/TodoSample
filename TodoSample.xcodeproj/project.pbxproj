@@ -16,6 +16,7 @@
 		72977EC0266FA4AE00239028 /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72977EBD266FA4AE00239028 /* sound-ding.mp3 */; };
 		72977EC1266FA4AE00239028 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72977EBE266FA4AE00239028 /* sound-rise.mp3 */; };
 		72977EC2266FA4AE00239028 /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72977EBF266FA4AE00239028 /* sound-tap.mp3 */; };
+		72977ED32670DB0700239028 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72977ED22670DB0700239028 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		72977EBD266FA4AE00239028 /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
 		72977EBE266FA4AE00239028 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
 		72977EBF266FA4AE00239028 /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
+		72977ED22670DB0700239028 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		72977EC6266FA4D100239028 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				72977ED22670DB0700239028 /* Constant.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			files = (
 				72977EB2266FA37F00239028 /* Persistence.swift in Sources */,
 				72977EAB266FA37D00239028 /* ContentView.swift in Sources */,
+				72977ED32670DB0700239028 /* Constant.swift in Sources */,
 				72977EA9266FA37D00239028 /* TodoSampleApp.swift in Sources */,
 				72977EB5266FA37F00239028 /* TodoSample.xcdatamodeld in Sources */,
 			);
