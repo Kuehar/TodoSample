@@ -13,6 +13,10 @@ struct ContentView: View {
     
     @State var task: String = ""
     
+    private var isButtonDisabled:Bool{
+        task.isEmpty
+    }
+    
     // Fetch data
     @Environment(\.managedObjectContext) private var viewContext
 
@@ -38,6 +42,8 @@ struct ContentView: View {
                 let nsError = error as NSError
                 fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
             }
+            task = ""
+            hideKeyboard()
         }
     }
     
@@ -73,10 +79,11 @@ struct ContentView: View {
                         Text("SAVE")
                         Spacer()
                     })
+                    .disabled(isButtonDisabled)
                     .padding()
                     .font(.headline)
                     .foregroundColor(.white)
-                    .background(Color.pink)
+                    .background(isButtonDisabled ? Color.gray : Color.pink)
                     .cornerRadius(10)
                 }// Vstack
                 .padding()
@@ -103,12 +110,6 @@ struct ContentView: View {
                         EditButton()
                     }
                     #endif
-
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        Button(action: addItem) {
-                            Label("Add Item", systemImage: "plus")
-                        }
-                    }
             }//: ToolBar
             }// VStack
         }//: Navigation
